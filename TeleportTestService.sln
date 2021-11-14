@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirportsService.Api", "AirportsService.Api\AirportsService.Api.csproj", "{36C1BBC0-83E5-4795-8850-46927728A3C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirportsService.Business", "AirportsService.Business\AirportsService.Business.csproj", "{BD33F105-B5EF-4E8D-8A43-A0324490D851}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirportsService.Common", "AirportsService.Common\AirportsService.Common.csproj", "{641AD5B8-1F85-4F3F-A859-88EC7048177C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeleportPlaces.Client", "TeleportPlaces.Client\TeleportPlaces.Client.csproj", "{55612D7C-846E-4CD6-9FA3-014F08A45780}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36C1BBC0-83E5-4795-8850-46927728A3C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36C1BBC0-83E5-4795-8850-46927728A3C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36C1BBC0-83E5-4795-8850-46927728A3C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36C1BBC0-83E5-4795-8850-46927728A3C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD33F105-B5EF-4E8D-8A43-A0324490D851}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD33F105-B5EF-4E8D-8A43-A0324490D851}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD33F105-B5EF-4E8D-8A43-A0324490D851}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD33F105-B5EF-4E8D-8A43-A0324490D851}.Release|Any CPU.Build.0 = Release|Any CPU
+		{641AD5B8-1F85-4F3F-A859-88EC7048177C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{641AD5B8-1F85-4F3F-A859-88EC7048177C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{641AD5B8-1F85-4F3F-A859-88EC7048177C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{641AD5B8-1F85-4F3F-A859-88EC7048177C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55612D7C-846E-4CD6-9FA3-014F08A45780}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55612D7C-846E-4CD6-9FA3-014F08A45780}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55612D7C-846E-4CD6-9FA3-014F08A45780}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55612D7C-846E-4CD6-9FA3-014F08A45780}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

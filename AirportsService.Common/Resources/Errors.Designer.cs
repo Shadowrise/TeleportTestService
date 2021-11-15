@@ -70,7 +70,7 @@ namespace AirportsService.Common {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Validation failed.
+        ///   Looks up a localized string similar to One or more validation errors occurred.
         /// </summary>
         public static string ER0002 {
             get {

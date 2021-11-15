@@ -22,6 +22,6 @@
         <value>An unhandled error occurred</value>
     </data>
     <data name="ER0002" xml:space="preserve">
-        <value>Validation failed</value>
+        <value>One or more validation errors occurred</value>
     </data>
 </root>

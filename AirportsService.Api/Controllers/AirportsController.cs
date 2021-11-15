@@ -2,6 +2,7 @@
 using AirportsService.Business.Airports.Queries.GetDistance;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using TeleportTestService.Infrastructure.Caching;
 
 namespace TeleportTestService.Controllers;
 
@@ -31,6 +32,7 @@ public class AirportsController : ControllerBase
     /// <param name="cancellationToken"></param>
     /// <returns></returns>
     [HttpGet("distance")]
+    [ResponseCache(CacheProfileName = CacheProfiles.Default)]
     public async Task<double> GetDistance(
         [FromQuery, Required] string code1, 
         [FromQuery, Required] string code2,

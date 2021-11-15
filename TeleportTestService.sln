@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirportsService.Common", "A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeleportPlaces.Client", "TeleportPlaces.Client\TeleportPlaces.Client.csproj", "{55612D7C-846E-4CD6-9FA3-014F08A45780}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirportsService.Tests", "AirportsService.Tests\AirportsService.Tests.csproj", "{631E1F28-043C-4D53-9358-AF63070E8CBF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{55612D7C-846E-4CD6-9FA3-014F08A45780}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55612D7C-846E-4CD6-9FA3-014F08A45780}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55612D7C-846E-4CD6-9FA3-014F08A45780}.Release|Any CPU.Build.0 = Release|Any CPU
+		{631E1F28-043C-4D53-9358-AF63070E8CBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{631E1F28-043C-4D53-9358-AF63070E8CBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{631E1F28-043C-4D53-9358-AF63070E8CBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{631E1F28-043C-4D53-9358-AF63070E8CBF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

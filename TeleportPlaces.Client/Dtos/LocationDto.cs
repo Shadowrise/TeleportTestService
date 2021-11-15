@@ -1,4 +1,4 @@
-﻿namespace TeleportPlacesClient;
+﻿namespace TeleportPlacesClient.Dtos;
 
 public class LocationDto
 {

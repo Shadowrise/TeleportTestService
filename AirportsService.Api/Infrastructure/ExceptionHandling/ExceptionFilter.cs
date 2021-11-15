@@ -21,42 +21,35 @@ public class ExceptionFilter : ExceptionFilterAttribute
 
     public override void OnException(ExceptionContext context)
     {
-        ErrorModel errorModel;
+        var errorModel = new ErrorModel
+        {
+            ServerTime = DateTime.UtcNow
+        };
         int statusCode;
         
         if (context.Exception is ApiException apiException)
         {
             statusCode = (int)HttpStatusCode.BadRequest;
-            errorModel = new ErrorModel
-            {
-                Code = apiException.ErrorCode,
-                Message = apiException.ErrorMessage
-            };
+            errorModel.Code = apiException.ErrorCode;
+            errorModel.Message = apiException.ErrorMessage;
         }
         else if (context.Exception is ValidationException validationException)
         {
             statusCode = (int)HttpStatusCode.UnprocessableEntity;
-            errorModel = new ErrorModel
+            errorModel.Code = nameof(Errors.ER0002);
+            errorModel.Message = Errors.ER0002;
+            errorModel.ValidationErrors = validationException.Errors.Select(x => new ValidationErrorModel()
             {
-                Code = nameof(Errors.ER0002),
-                Message = Errors.ER0002,
-                // TODO: use automapper
-                ValidationErrors = validationException.Errors.Select(x => new ValidationErrorModel()
-                {
-                    PropertyName = x.PropertyName,
-                    ErrorMessage = x.ErrorMessage,
-                    AttemptedValue = x.AttemptedValue
-                })
-            };
+                PropertyName = x.PropertyName,
+                ErrorMessage = x.ErrorMessage,
+                AttemptedValue = x.AttemptedValue
+            });
         }
         else
         {
             statusCode = (int)HttpStatusCode.InternalServerError;
-            errorModel = new ErrorModel
-            {
-                Code = nameof(Errors.ER0001),
-                Message = _hostEnvironment.IsProduction() ? Errors.ER0001: context.Exception.Message
-            };
+            errorModel.Code = nameof(Errors.ER0001);
+            errorModel.Message =_hostEnvironment.IsProduction() ? Errors.ER0001: context.Exception.Message;
         }
 
         if (!_hostEnvironment.IsProduction())

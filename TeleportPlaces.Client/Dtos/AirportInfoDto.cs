@@ -1,7 +1,4 @@
-﻿using System.Collections.ObjectModel;
-using Newtonsoft.Json;
-
-namespace TeleportPlacesClient;
+﻿namespace TeleportPlacesClient.Dtos;
 
 public class AirportInfoDto
 {

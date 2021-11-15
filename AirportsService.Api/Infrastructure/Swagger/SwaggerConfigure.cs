@@ -3,7 +3,7 @@ using Microsoft.OpenApi.Models;
 
 namespace TeleportTestService.Infrastructure.Swagger;
 
-public static class SwaggerConfigurationExtension
+public static class SwaggerConfigure
 {
     public static void AddCustomSwagger(this IServiceCollection services)
     {

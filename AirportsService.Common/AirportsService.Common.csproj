@@ -7,10 +7,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Enums" />
-    </ItemGroup>
-
-    <ItemGroup>
       <EmbeddedResource Update="Resources\Errors.resx">
         <Generator>PublicResXFileCodeGenerator</Generator>
         <LastGenOutput>Errors.Designer.cs</LastGenOutput>
